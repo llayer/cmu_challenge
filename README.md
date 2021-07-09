@@ -2,8 +2,9 @@
 
 ## Machine learning for muon energy reconstruction in a high-granularity calorimeter
 
+Setup the environment on CMU bridges
 
-## Step I: Install custom python packages
+### Step I: Install custom python packages
 
 Login to
 ```
@@ -19,7 +20,7 @@ pip install --user sparse
 pip install --user --upgrade torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
-## Step II: Create a custom kernel for your jupyter
+### Step II: Create a custom kernel for your jupyter
 
 ```
 mkdir -p ~/.local/share/jupyter/kernels/
