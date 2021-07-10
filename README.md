@@ -38,7 +38,7 @@ this in the extra ARgs: `--gpus=v100-16:1`
 
 ### Step IV: Copy the data and clone the repository
 
-You can copy the data via:
+From a bridges node (login via ssh) you can copy the data via:
 ```
 cp -r /ocean/projects/cis210053p/shared/muon_reg .
 ```
