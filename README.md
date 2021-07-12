@@ -46,7 +46,7 @@ And clone the repository:
 git clone https://github.com/llayer/cmu_challenge.git
 ```
 
-## Imporvement ideas
+## Improvement ideas
  
  - Combine HL features with the CNN output
  - Change the loss function to better focus on lower energy
@@ -71,4 +71,4 @@ If reused, the data should be citated as:
 }
 ```
 
-We'll soon be releasing the fulldatasets on Zenodo, anyway, at which point they will have their own DOI and citation.
+We'll soon be releasing the full datasets on Zenodo, anyway, at which point they will have their own DOI and citation.
