@@ -29,6 +29,7 @@ cp -r /ocean/projects/cis210053p/shared/common/python3-AI ~/.local/share/jupyter
 To open a live notebook from the OnDemand interface, follow these steps:
 - log in on https://ondemand.bridges2.psc.edu/
 - click on "Jupyter Notebook" in the `Interactive Apps` menu in the top bar
+- Set the number of hours to ~24 so you can keep the session running during the night if you want to continue training
 - You can use the default settings for a standard CPU node, for GPU, select the `GPU-shared` partition, and use 
 this in the extra ARgs: `--gpus=v100-16:1`
 - Once your Jupyter instance is allocated, open it, and you should be able to create a new notebook, with kernel "Python 3 - AI"
