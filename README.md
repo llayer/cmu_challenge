@@ -13,7 +13,7 @@ ssh <user_name>@bridges2.psc.edu
 and execute:
 ```
 module load AI
-pip install --user uproot awkward xgboost sparse fastprogress==0.1.21
+pip install --user uproot==4.0.4 awkward==1.4.0 xgboost==1.4.2 sparse==0.11.2 fastprogress==0.1.21
 pip install --user --upgrade torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
