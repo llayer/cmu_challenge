@@ -24,7 +24,18 @@ mkdir -p ~/.local/share/jupyter/kernels/
 cp -r /ocean/projects/cis210053p/shared/common/python3-AI ~/.local/share/jupyter/kernels/
 ```
 
-### Step III: Open the notebook in OnDemand
+### Step III: Copy the data and clone the repository
+
+From a bridges node (login via ssh) you can copy the data via:
+```
+cp -r /ocean/projects/cis210053p/shared/muon_reg .
+```
+And clone the repository:
+```
+git clone https://github.com/llayer/cmu_challenge.git
+```
+
+### Step IV: Open the notebook in OnDemand
 
 To open a live notebook from the OnDemand interface, follow these steps:
 - log in on https://ondemand.bridges2.psc.edu/
@@ -35,16 +46,6 @@ this in the extra ARgs: `--gpus=v100-16:1`
 - Once your Jupyter instance is allocated, open it, and you should be able to create a new notebook, with kernel "Python 3 - AI"
 - If you open a notebook from a repository you eventually have to click on 'Kernel' and then 'Change Kernel' to change to "Python 3 - AI"
 
-### Step IV: Copy the data and clone the repository
-
-From a bridges node (login via ssh) you can copy the data via:
-```
-cp -r /ocean/projects/cis210053p/shared/muon_reg .
-```
-And clone the repository:
-```
-git clone https://github.com/llayer/cmu_challenge.git
-```
 
 ## Improvement ideas
  
