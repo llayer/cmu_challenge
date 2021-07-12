@@ -1,6 +1,6 @@
-# cmu_challenge
+# CMU Challenge: Machine learning for muon energy reconstruction in a high-granularity calorimeter
 
-## Machine learning for muon energy reconstruction in a high-granularity calorimeter
+## Setup
 
 Setup the environment on CMU bridges
 
@@ -13,10 +13,7 @@ ssh <user_name>@bridges2.psc.edu
 and execute:
 ```
 module load AI
-pip install --user uproot
-pip install --user awkward
-pip install --user xgboost
-pip install --user sparse
+pip install --user uproot awkward xgboost sparse fastprogress
 pip install --user --upgrade torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
@@ -46,3 +43,30 @@ And clone the repository:
 ```
 git clone https://github.com/llayer/cmu_challenge.git
 ```
+
+## Imporvement ideas
+ 
+ - Combine HL features with the CNN output
+ - Change the loss function to better focus on lower energy
+ - Apply a bias correction to the regressor predictions to reduce residual bias at high energy
+ - Improve CNN architecture
+ - Construct new HL features from raw data
+ - Improve CNN training
+ - Ensemble different models
+
+
+## Data citation
+
+If reused, the data should be citated as:
+```
+@misc{kieseler2021calorimetric,
+      title={Calorimetric Measurement of Multi-TeV Muons via Deep Regression}, 
+      author={Jan Kieseler and Giles C. Strong and Filippo Chiandotto and Tommaso Dorigo and Lukas Layer},
+      year={2021},
+      eprint={2107.02119},
+      archivePrefix={arXiv},
+      primaryClass={physics.ins-det}
+}
+```
+
+We'll soon be releasing the fulldatasets on Zenodo, anyway, at which point they will have their own DOI and citation.

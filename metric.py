@@ -7,7 +7,7 @@ import pandas as pd
 __all__ = ['compute_improvement']
 
 
-def get_res(df:pd.DataFrame, bins:np.ndarray=np.linspace(100,4000,21),
+def get_res(df:pd.DataFrame, bins:np.ndarray=np.linspace(50,8000,41),
             pred_name:str='pred', targ_name:str='target') -> pd.DataFrame:
     r'''
     Computes resolution in bins of true energy based on predictions which are already bias-corrected
@@ -55,8 +55,8 @@ def compute_improvement(df:pd.DataFrame, plot:bool=True, pred_name:str='pred', t
         Improvment metric (higher = better)
     '''
     
-    n_bins = 20
-    res_bins = np.linspace(100,4000,n_bins+1)
+    n_bins = 40
+    res_bins = np.linspace(50,8000,n_bins+1)
     targ_bins = np.array([res_bins[i]+(res_bins[i+1]-res_bins[i])/2 for i in range(n_bins)])
     tracker_res = (2e-4)*targ_bins
     
